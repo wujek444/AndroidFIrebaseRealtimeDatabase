@@ -6,12 +6,22 @@ package com.inducesmile.androidfirebaserealtimedatabase;
 
 public class Task {
     private String task;
+    private String description;
 
-    public Task() {}
+    public Task() {
+        this.description = "Hardcoded desc";
+    }
     public Task(String task) {
         this.task = task;
+        this.description = "Hardcoded desc";
     }
+
+
     public String getTask() {
         return task;
+    }
+
+    public String getDescription() {
+        return description;
     }
 }
